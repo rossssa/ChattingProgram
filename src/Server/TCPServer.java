@@ -6,7 +6,7 @@ import java.util.*;
 //import Server.User;
 //import Server.Room;
 public class TCPServer implements Runnable{
-    public static final int PORT = 7777;
+    public static final int PORT = 5500;
     Vector<User> Userlist;
     Vector<User> MainUser;
     Vector<Room> Chatroom;

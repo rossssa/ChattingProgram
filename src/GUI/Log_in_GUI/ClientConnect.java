@@ -13,7 +13,7 @@ import java.util.Vector;
 
 public class ClientConnect implements Runnable {
 
-    private static int PORT = 7777;
+    private static int PORT = 5500;
     private static String IP = "127.0.0.1";
     private Socket socket;
 
@@ -69,7 +69,7 @@ public class ClientConnect implements Runnable {
         if (!ready) {
             socket = null;
             try {
-                socket = new Socket("127.0.0.1", 7777);
+                socket = new Socket("127.0.0.1", 5500);
             } catch (UnknownHostException e) {
                 e.printStackTrace();
                 System.out.println("UnKnownHost");
